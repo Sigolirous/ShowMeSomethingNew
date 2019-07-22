@@ -12,23 +12,41 @@
 <body>
     <div class="background">
         <div class = "up">
-        <h1 class = "display-1" style="text-align:center;">Show me something new</h1>
+        <h1 class = "display-1" style="text-align:center; font-size: 4vw">Show me something new</h1>
         <br/>
-        <a href='sendChanels.html' class="btn btn-warning">Send a Chanel</a>
+        <a href='sendChannels.html' class="btn btn-warning" style = "font-size: 1vw">Send a channel</a>
         <br/><br/><br/>
             <div style='text-align: center; width: 50%; margin-left: 25%; margin-right: 25%;'>
-                <p>What kind of videos are you interested in:  <input id="tags" style="text-align: center; width: 50%; margin-left: 25%; margin-right: 25%;" class="form-control"></p>
-                <small class="form-text text-muted">
-                    Only one tag: music, code, gaming, computing, math.
-                </small><br/>
-                <input type="button" id="showMe" value="Go!" class="btn btn-dark" style='text-align: center; width: 50%; margin-left: 25%; margin-right: 25%;'>
+                    <div id="alert" style="display: none">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                          <h5 class="modal-title" id="modalHeader">Error</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                          <p id="modalBodyCode">Error Code</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" id = "gotItButton">Got it!</button>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                <div id="form" style="font-size:1vw">
+                    <p>What kind of videos are you interested in:  <input id="tags" style="text-align: center; width: 50%; margin-left: 25%; margin-right: 25%; font-size: 1vw" class="form-control" placeholder="Only one tag: music, code, gaming, computing, math."></p>
+                    <input type="button" id="showMe" value="Go!" class="btn btn-dark" style='text-align: center; width: 50%; margin-left: 25%; margin-right: 25%;'>
+                </div>
                 <script src="./script/indexPublic.js"></script>
             </div>
         </div>
         <div class='contact'>
-            <i class="fab fa-github-square fa-7x" style="padding:1%"></i>
-            <i class="fab fa-twitter-square fa-7x"style="padding:1%"></i>
-            <i class="fas fa-envelope-square fa-7x" style="padding:1%"></i>
+            <a href="https://github.com/Sigolirous" style="color: black"><i class="fab fa-github-square fa-7x" style="padding:1%"></i></a>
+            <a id = "mailTo"><i class="fas fa-envelope-square fa-7x" style="color: black; cursor: pointer; padding: 1%"></i></a>
+            <script>
+                document.getElementById('mailTo').addEventListener('click', ()=>{
+                    window.open('mailto:augustoasigolo@disroot.org')
+                })
+            </script>
         </div>
     </div>
     <div class="thanks">
