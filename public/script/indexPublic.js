@@ -16,7 +16,7 @@ function finalHandle(status, code){
 // handle with the 'click' event
 button.addEventListener('click', async randomizeIt =>{
    // get the form value 
-   const tags = document.getElementById('tags').value
+   const tags = document.getElementById('tags').value.toLowerCase()
    // put the const tags into an object to sent it by a post method
    const dataTag = {tags}
    // define the POST method and deal with the data to be send
