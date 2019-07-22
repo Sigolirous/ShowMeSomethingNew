@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Send a Chanel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+    <div class="up">
     <h1>Send a Chanel</h1>
-    <a href='index.html'>Find your new favorit chanel</a><br/><br/><br/>
+    <br/>
+    <a href='index.html' class="btn btn-warning">Find your new favorit chanel</a><br/><br/><br/>
     <p>
-        <p>Chanel Link</p><input id='chanelLink' required><br/>
-        <p>Tag 1</p><input id='tag1' required><br/>
-        <p>Tag 2</p><input id='tag2' required><br/>
-        <p>Tag 3</p><input id='tag3' required><br/>
+        <p>Chanel Link</p><input id='chanelLink' class="form-control" style="text-align: center; width: 25%; margin-left: 37%" required><br/>
+        <p>Tag 1</p><input id='tag1' class="form-control" style="text-align: center; width: 10%; margin-left: 45%" required><br/>
+        <p>Tag 2</p><input id='tag2' class="form-control" style="text-align: center; width: 10%; margin-left: 45%" required><br/>
+        <p>Tag 3</p><input id='tag3' class="form-control" style="text-align: center; width: 10%; margin-left: 45%" required><br/>
     </p> 
-    <input type="button" id="submit" value="Submit">
+    <input type="button" id="submit" value="Submit" class="btn btn-dark">
     <script src = './script/sendChanels.js'></script>
+    </div>
 </body>
 </html>

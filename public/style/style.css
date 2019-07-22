@@ -1,0 +1,23 @@
+.background{
+    background-image: url("https://imagizer.imageshack.com/img922/2274/WFiTCd.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover; */
+    background-size:cover;
+    background-position:center;
+}
+.up{
+    text-align: center;
+    background-color:  rgba(255, 255, 255, 0.75);
+    padding: 1%
+}
+.contact{
+    background-color: rgba(255, 0, 255, 0.5);
+    text-align: center;
+}
+.thanks{
+    background-color: rgb(127, 241, 127, 0.5);
+    padding: 8.3%;
+    text-align: center
+}
