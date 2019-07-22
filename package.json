@@ -1,0 +1,20 @@
+{
+  "name": "show-me-something-new",
+  "version": "1.0.0",
+  "description": "Teleports you to a random youtube chanel based on your interests",
+  "main": "mainServer.js",
+  "scripts": {
+    "start": "node mainServer.js",
+    "test": "  \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "keywords": [
+    "youtube",
+    "random"
+  ],
+  "author": "Sigolirous",
+  "license": "UNLICENSEDGNU General Public License v3.0",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "nedb": "^1.8.0"}
+}
