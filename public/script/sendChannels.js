@@ -20,11 +20,11 @@ submitchannelButton.addEventListener('click', async ()=>{
     const tag1 = document.getElementById('tag1').value
     const tag2 = document.getElementById('tag2').value
     const tag3 = document.getElementById('tag3').value
-    if (tag1 == '' || tag2 == '' || tag3 == '' || tag1 == tag2 || tag1 == tag3 || tag2 == tag1 || tag2 == tag3 || tag3 == tag1 || tag3 == tag2){
+    if (tag1.toLowerCase() == '' || tag2.toLowerCase() == '' || tag3.toLowerCase() == '' || tag1.toLowerCase() == tag2.toLowerCase() || tag1.toLowerCase() == tag3.toLowerCase() || tag2.toLowerCase() == tag1.toLowerCase() || tag2.toLowerCase() == tag3.toLowerCase() || tag3.toLowerCase() == tag1.toLowerCase() || tag3.toLowerCase() == tag2.toLowerCase()){
         finalHandle('Error 🙈', 'Aparently, there is one tag empty or equal to another. Feel free to try agai!')
     }else{
     // put all the data into a single array
-    const channelsInformation = [channelLink, tag1, tag2, tag3]
+    const channelsInformation = [channelLink, tag1.toLowerCase(), tag2.toLowerCase(), tag3.toLowerCase()]
     // =================== DEBUG FEATURE ===============
     // console.log(channelsInformation)
     // =================== DEBUG FEATURE ===============
