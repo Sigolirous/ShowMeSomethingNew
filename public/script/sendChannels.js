@@ -17,10 +17,10 @@ function finalHandle(status, code){
 submitchannelButton.addEventListener('click', async ()=>{
     // get the form values
     const channelLink = document.getElementById('channelLink').value
-    const tag1 = document.getElementById('tag1').value
-    const tag2 = document.getElementById('tag2').value
-    const tag3 = document.getElementById('tag3').value
-    if (tag1.toLowerCase() == '' || tag2.toLowerCase() == '' || tag3.toLowerCase() == '' || tag1.toLowerCase() == tag2.toLowerCase() || tag1.toLowerCase() == tag3.toLowerCase() || tag2.toLowerCase() == tag1.toLowerCase() || tag2.toLowerCase() == tag3.toLowerCase() || tag3.toLowerCase() == tag1.toLowerCase() || tag3.toLowerCase() == tag2.toLowerCase()){
+    const tag1 = document.getElementById('tag1').value.toLowerCase().trim()
+    const tag2 = document.getElementById('tag2').value.toLowerCase().trim()
+    const tag3 = document.getElementById('tag3').value.toLowerCase().trim()
+    if (tag1 == '' || tag2 == '' || tag3 == '' || tag1 == tag2 || tag1 == tag3 || tag2 == tag3){
         finalHandle('Error 🙈', 'Aparently, there is one tag empty or equal to another. Feel free to try agai!')
     }else{
     // put all the data into a single array

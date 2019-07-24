@@ -1,11 +1,18 @@
 .background{
-    background-image: url("https://imagizer.imageshack.com/img922/2274/WFiTCd.jpg");
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
     background-position:center;
+    margin:0;
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .up{
     text-align: center;
@@ -15,11 +22,18 @@
 .contact{
     background-color: rgba(255, 0, 255, 0.5);
     text-align: center;
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .thanks{
     background-color: rgb(127, 241, 127, 0.5);
     padding: 8.3%;
-    text-align: center
+    text-align: center;
 }
 .modalAlert{
     position: absolute;
@@ -28,5 +42,11 @@
     text-align: center;
     background-image: url("https://imagizer.imageshack.com/img922/2274/WFiTCd.jpg");
     background-color:  rgba(255, 0, 255, 0.5);
-    padding: 6.35%;
+    padding: 6.35%
+}
+.header{
+    background-color: rgba(86, 52, 236, 1);
+    color: rgba(250, 0, 0);
+    margin: none;
+    padding-bottom: 1%;
 }

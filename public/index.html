@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="./style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script src="https://kit.fontawesome.com/8b8aaf5779.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Josefin+Sans|Ubuntu+Mono&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div class = "header">
+        <h1 class = "display-1" style="text-align:center; font-size: 6vw; font-family: 'Alfa Slab One', cursive;">Show me something new</h1>
+  </div>
+  <a href='sendChannels.html' class="btn btn-warning" style="width:100%">Send a channel</a>  
     <div class="background">
-        <div class = "up">
-        <h1 class = "display-1" style="text-align:center; font-size: 6vw">Show me something new</h1>
-        <br/>
-        <a href='sendChannels.html' class="btn btn-warning">Send a channel</a>
-        <br/><br/><br/>
+      <div class = "up">
+  
             <div style='text-align: center; width: 50%; margin-left: 25%; margin-right: 25%;'>
                     <div id="alert" style="display: none">
                             <div class="modal-dialog" role="document">
@@ -34,14 +36,15 @@
                             </div>
                         </div>
                 <div id="form" style="font-size:1vw">
-                    <p style="font-size:4vw">What kind of videos are you interested in:  <input id="tags" style="font-size: 2vw; text-align: center; width:70%; max-height: 30%;margin-left: 15%; float:left" class="form-control" placeholder="Only one tag: music, games."></p>
+                    <p style="font-size:5vw; font-family: 'Josefin Sans', sans-serif;">What kind of videos are you interested in:  <input id="tags" style="font-size: 2vw; text-align: center; width:70%; max-height: 30%;margin-left: 15%; float:left" class="form-control" placeholder="Only one tag: music, games."></p>
                   <br/><br/>  
                   <input type="button" id="showMe" value="Go!" class="btn btn-dark" style='text-align: center; width: 50%; margin-left: 25%; margin-right: 25%; padding:0;'>  
               </div>
                 <script src="./script/indexPublic.js"></script>
             </div>
         </div>
-        <div class='contact'>
+    </div>
+<div class='contact' style="font-size:1vw">
             <a href="https://github.com/Sigolirous" style="color: black"><i class="fab fa-github-square fa-7x" style="padding:1%"></i></a>
             <a id = "mailTo"><i class="fas fa-envelope-square fa-7x" style="color: black; cursor: pointer; padding: 1%"></i></a>
             <script>
@@ -50,9 +53,5 @@
                 })
             </script>
         </div>
-    </div>
-    <div class="thanks">
-        <p>Created by Sigolirous.</p>
-    </div>
 </body>
 </html>
